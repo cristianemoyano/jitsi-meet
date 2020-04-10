@@ -1,3 +1,4 @@
+APP_PORT = 5000
 BUILD_DIR = build
 CLEANCSS = ./node_modules/.bin/cleancss
 DEPLOY_DIR = libs
@@ -11,7 +12,7 @@ STYLES_BUNDLE = css/all.bundle.css
 STYLES_DESTINATION = css/all.css
 STYLES_MAIN = css/main.scss
 WEBPACK = ./node_modules/.bin/webpack
-WEBPACK_DEV_SERVER = ./node_modules/.bin/webpack-dev-server
+WEBPACK_DEV_SERVER = ./node_modules/.bin/webpack-dev-server --port $(APP_PORT)
 
 all: compile deploy clean
 
